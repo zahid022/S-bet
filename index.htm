@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- navbar start -->
+    <nav>
+        <div id="navbar-mobile">
+            <div class="container">
+                <div id="nav-mob">
+                    <button onclick="sidebarAc()" id="nav-mob-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul id="nav-mob-menu" class="align-self-center">
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">contacts</a></li>
+                        <li>
+                            <button onclick="langOpen()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div id="mob-logo">
+                    <img src="img/logo-inverse-213x82.png" alt="Logo" />
+                </div>
+                <fieldset>
+                    <input type="text" placeholder="Enter your search request here..." />
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </fieldset>
+                <ul id="sidebar-menu">
+                    <li><a href="">sports</a></li>
+                    <li><a href="">in-play</a></li>
+                    <li><a href="">promotions</a></li>
+                    <li><a href="">statistics</a></li>
+                    <li><a href="">results</a></li>
+                    <li><a href="">pages</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+                <div id="sidebar-icon">
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-google-plus-g"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </div>
+            </div>
+            <div id="register-mob">
+                <div class="container">
+                    <div class="register-mobile">
+                        <ul>
+                            <li><select id="mobile-lang">
+                                <option value="en">en</option>
+                                <option value="fr">fr</option>
+                                <option value="es">es</option>
+                            </select></li>
+                            <li><a href="#">registration</a></li>
+                            <li><button><i class="fas fa-sign-in-alt"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-desktop">
+            <div class="nav-top">
+                <div class="container">
+                    <div class="nav-top-item">
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                        <ul id="des-lang">
+                            <li><select>
+                                <option value="en">En</option>
+                                <option value="fr">fr</option>
+                                <option value="es">Es</option>
+                            </select></li>
+                            <li><a href="#">registration</a></li>
+                            <li><button><i class="fas fa-sign-in-alt"></i> <span>your account</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="container">
+                    <div class="nav-center-item">
+                        <div id="logo-des">
+                            <img src="img/logo-inverse-213x82.png" alt="logo" />
+                        </div>
+                        <fieldset>
+                            <input type="text" placeholder="Enter your search request here..." />
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <div class="container">
+                    <div class="nav-bottom-item">
+                        <ul>
+                            <li><a href="#">sports</a></li>
+                            <li><a href="#">in-play</a></li>
+                            <li><a href="#">promotions</a></li>
+                            <li><a href="#">statistics</a></li>
+                            <li><a href="#">results</a></li>
+                            <li><a href="#">pages</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+    <!-- header start  -->
+    <header>
+        <div id="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="sl-1">
+                        <div class="container">
+                           <div class="slide-item animate__animated animate__fadeInDown">
+                                <h1>safe <br> betting</h1>
+                                <h3>with 100% risk-free <br> guarantee</h3>
+                                <button>get started</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="sl-2">
+                        <div class="container">
+                            <div class="slide-item animate__animated animate__fadeInDown">
+                                <h1>easy bets</h1>
+                                <h3>with the lowest commissions</h3>
+                                <button>join us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- main start  -->
+    <main>
+        <section id="section1">
+            <div class="container">
+                <ul id="section-btns">
+                    <li><button onclick="sportall()">
+                        <span class="sports-img1 sports-img"></span>
+                        <span class="sports-name">all sports</span>
+                        <span class="sports-say">29</span>
+                    </button></li>
+                    <li><button onclick="sportAc(0)">
+                        <span class="sports-img2 sports-img"></span>
+                        <span class="sports-name">football</span>
+                        <span class="sports-say">6</span>
+                    </button></li>
+                    <li><button onclick="sportAc(1)">
+                        <span class="sports-img3 sports-img"></span>
+                        <span class="sports-name">tennis</span>
+                        <span class="sports-say">4</span>
+                    </button></li>
+                    <li><button onclick="sportAc(2)">
+                        <span class="sports-img4 sports-img"></span>
+                        <span class="sports-name">basketball</span>
+                        <span class="sports-say">4</span>
+                    </button></li>
+                    <li><button onclick="sportAc(3)">
+                        <span class="sports-img5 sports-img"></span>
+                        <span class="sports-name">ice hockey</span>
+                        <span class="sports-say">3</span>
+                    </button></li>
+                    <li><button onclick="sportAc(4)">
+                        <span class="sports-img6 sports-img"></span>
+                        <span class="sports-name">volleyball</span>
+                        <span class="sports-say">3</span>
+                    </button></li>
+                    <li><button onclick="sportAc(5)">
+                        <span class="sports-img7 sports-img"></span>
+                        <span class="sports-name">badminton</span>
+                        <span class="sports-say">4</span>
+                    </button></li>
+                    <li><button onclick="sportAc(6)">
+                        <span class="sports-img8 sports-img"></span>
+                        <span class="sports-name">baseball</span>
+                        <span class="sports-say">2</span>
+                    </button></li>
+                    <li><button onclick="sportAc(7)">
+                        <span class="sports-img9 sports-img"></span>
+                        <span class="sports-name">table tennis</span>
+                        <span class="sports-say">2</span>
+                    </button></li>
+                    <li><button onclick="sportAc(8)">
+                        <span class="sports-img10 sports-img"></span>
+                        <span class="sports-name">cycling</span>
+                        <span class="sports-say">2</span>
+                    </button></li>
+                </ul>
+                <button id="select-btn" onclick="secimAc()">select</button>
+                <div id="secim">
+                    <ul>
+                        <li><button onclick="sportall()" href="#">all sports 29</button></li>
+                        <li><button onclick="sportAc(1)" href="#">tennis 4</button></li>
+                        <li><button onclick="sportAc(3)" href="#">ice hockey 3</button></li>
+                        <li><button onclick="sportAc(5)" href="#">badminton 4</button></li>
+                        <li><button onclick="sportAc(7)" href="#">table tennis 2</button></li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="sportAc(0)" href="#">football 6</button></li>
+                        <li><button onclick="sportAc(2)" href="#">basketball 1</button></li>
+                        <li><button onclick="sportAc(4)" href="#">volleyball 3</button></li>
+                        <li><button onclick="sportAc(6)" href="#">baseball 2</button></li>
+                        <li><button onclick="sportAc(8)" href="#">cycling 2</button></li>
+                    </ul>
+                </div>
+                <h4>ALL SPORTS (29)</h4>
+                <ul id="sports">
+                    <li class="nov" id="football">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>football (6)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>national championship (6)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>real madrid</p>
+                                                <span>4</span>
+                                            </li>
+                                            <li>
+                                                <p>chelsea</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    real madrid
+                                                    <span>1.23</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>13.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    chelsea
+                                                    <span>34.25</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+58 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>arsenal</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>everton</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    arsenal
+                                                    <span>2.83</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>7.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    everton
+                                                    <span>12.15</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>WEST HAM UNITED</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>BOURNEMOUTH</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    west ham united
+                                                    <span>4.17</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>17.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    bournemouth
+                                                    <span>18.52</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+51 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>LEICESTER CITY</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>ATLETICO</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    leicester city
+                                                    <span>5.14</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>9.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    atletico
+                                                    <span>27.13</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+32 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>PARIS SAINT-GERMAIN</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>CARDIFF CITY</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    paris saint-germain
+                                                    <span>7.77</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>10.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    cardiff city
+                                                    <span>4.21</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+24 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-football">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>STOKE CITY</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>NEWCASTLE UNITED</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    stoke city
+                                                    <span>3.57</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>22.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    newcastle united
+                                                    <span>48.12</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+19 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="tennis">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>tennis (4)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>US INTERNATIONAL (4)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-tennis">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>HARRY STEWART</p>
+                                                <span><i>7 0</i> 0</span>
+                                            </li>
+                                            <li>
+                                                <p>DONALD CRAWFORD</p>
+                                                <span><i>6 1</i> 0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    harry stewart
+                                                    <span>13.5</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    donald crawford
+                                                    <span>1.005</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+25 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-tennis">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>PETER WELLS</p>
+                                                <span><i>5</i> 0</span>
+                                            </li>
+                                            <li>
+                                                <p>TYRONE NORMAN</p>
+                                                <span><i>4</i> 0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    peter wells
+                                                    <span>2.10</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    tyrone norman
+                                                    <span>1.68</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-tennis">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>EMILY SANDERS</p>
+                                                <span><i>5 3</i> 0</span>
+                                            </li>
+                                            <li>
+                                                <p>MARY CLARKE</p>
+                                                <span><i>7 4</i> 0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    emily sanders
+                                                    <span>1.25</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    mary clarke
+                                                    <span>3.75</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+51 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-tennis">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>GAVIN SIMPSON</p>
+                                                <span><i>4</i> 0</span>
+                                            </li>
+                                            <li>
+                                                <p>SIMON WARNER</p>
+                                                <span><i>4</i> 2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    gavin simpson
+                                                    <span>3.37</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    simon warner
+                                                    <span>8.15</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+32 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="basketball">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>BASKETBALL (1)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>NBA FINALS (1)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-basketball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>NEW YORK KNICKS</p>
+                                                <span>53</span>
+                                            </li>
+                                            <li>
+                                                <p>HOUSTON ROCKETS</p>
+                                                <span>66</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    new york knicks
+                                                    <span>2.05</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    houston rockets
+                                                    <span>1.005</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+25 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="hockey">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>ICE HOCKEY (3)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>NATIONAL HOCKEY LEAGUE (3)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-hockey">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>ANAHEIM DUCKS</p>
+                                                <span>4</span>
+                                            </li>
+                                            <li>
+                                                <p>NEW YORK RANGERS</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    anaheim ducks
+                                                    <span>1.23</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>13.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    new york rangers
+                                                    <span>34.25</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+58 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-hockey">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>CHICAGO BLACK HAWKS</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>WASHINGTON CAPITALS</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    chicago black hawks
+                                                    <span>1.58</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>13.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    washington capitals
+                                                    <span>17.88</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-hockey">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>FLORIDA PANTHERS</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>DETROIT RED WINGS</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    florida panthers
+                                                    <span>2.41</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    draw
+                                                    <span>13.00</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    detroid red wings
+                                                    <span>23.28</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+51 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="volleyball">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>VOLLEYBALL (3)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>MEN’S WORLD CHAMPIONSHIP (3)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-volleyball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>ESTONIA</p>
+                                                <span>18</span>
+                                            </li>
+                                            <li>
+                                                <p>slovakia</p>
+                                                <span>14</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    estonia
+                                                    <span>1.12</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    slovakia
+                                                    <span>5.45</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+25 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-volleyball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>poland</p>
+                                                <span><i>27</i> 8</span>
+                                            </li>
+                                            <li>
+                                                <p>germany</p>
+                                                <span><i>25</i> 9</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    poland
+                                                    <span>2.10</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    germany
+                                                    <span>1.68</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-volleyball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>france</p>
+                                                <span>16</span>
+                                            </li>
+                                            <li>
+                                                <p>spain</p>
+                                                <span>15</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    france
+                                                    <span>1.25</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    spain
+                                                    <span>3.75</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+51 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="badminton">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>BADMINTON (4)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>WORLD CHAMPIONSHIP (4)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-badminton">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>TAMMY EDWARDS</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>SANDRA RICHARDSON</p>
+                                                <span>14</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    tammy edwards
+                                                    <span>13.5</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    sandra richardson
+                                                    <span>1.00005</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+25 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-badminton">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>JEFFREY CARTER</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>ROSE MARTINEZ</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    jeffrey carter
+                                                    <span>2.10</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    rose martinez
+                                                    <span>1.68</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-badminton">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>ANGELA MORGAN</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>NANCY WALKER</p>
+                                                <span>15</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    angela morgan
+                                                    <span>1.25</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    nancy walker
+                                                    <span>3.75</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+51 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-badminton">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>EVELYN BAKER</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>LAURA LOPEZ</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    evelyn baker
+                                                    <span>1.25</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>laura lopez
+                                                    <span>3.75</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+32 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="baseball">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>BASEBALL (2)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>MLB (2)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-baseball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>BUFFALO BISONS</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>LEHIGH VALLEY IRONPIGS</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    buffalo bisons
+                                                    <span>13.5</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    lehigh valley ironpigs
+                                                    <span>1.00005</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+25 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-baseball">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>SYRACUSE CHIEFS</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>TOLEDO MUD HENS</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    syracuse chiefs
+                                                    <span>2.10</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    toledo mud hens
+                                                    <span>1.68</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+46 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="table-tennis">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>TABLE TENNIS (2)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>WORLD CHAMPIONSHIP (2)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-table">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>FRANCIS HART</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>JOHN RAMSEY</p>
+                                                <span>2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    francis hart 
+                                                    <span>3.5</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    john ramsey
+                                                    <span>2.65</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+16 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-table">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>MARTHA GARCIA</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>LISA PETERSON</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    martha garcia
+                                                    <span>2.60</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    lisa peterson
+                                                    <span>1.14</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+32 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nov" id="cycling">
+                        <div class="card-sport">
+                            <div class="card-head">
+                                <h5>CYCLING (2)</h5>
+                            </div>
+                            <hr>
+                            <div class="card-title">
+                                <h6>UCI ROAD WORLD CHAMPIONSHIP (2)</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="card-content">
+                                    <li class="card-img-cycling">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>JANET ALEXANDER</p>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <p>CHARLES MARTIN</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    janet alexander
+                                                    <span>1.98</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    charles martin
+                                                    <span>3.54</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+15 ></span></li>
+                                </ul>
+                                <ul class="card-content">
+                                    <li class="card-img-cycling">
+                                        <span class="sport-image"></span>
+                                    </li>
+                                    <li>
+                                        <ul class="team-name">
+                                            <li>
+                                                <p>TERRY GONZALES</p>
+                                                <span>1</span>
+                                            </li>
+                                            <li>
+                                                <p>JULIE WILSON</p>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="capsent">
+                                            <li>
+                                                <button>
+                                                    terry gonzales
+                                                    <span>4.05</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    julie wilson
+                                                    <span>1.14</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><span>+65 ></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="container">
+                <div class="box-row">
+                    <div class="box-item pl-0">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="img/betting-news-01-370x180.jpg" alt="image" />
+                            </div>
+                            <div class="box-body">
+                                <div class="box-center">
+                                    <ul>
+                                        <li>manchester united</li>
+                                        <li>leicester city</li>
+                                    </ul>
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        april 15, 2023
+                                    </span>
+                                </div>
+                                <div class="box-bottom box-bottom-football">
+                                    <button>
+                                        <span>1</span>
+                                        3.40
+                                    </button>
+                                    <button>
+                                        <span>X</span>
+                                        3.25
+                                    </button>
+                                    <button>
+                                        <span>2</span>
+                                        2.25
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="img/betting-news-02-370x180.jpg" alt="image" />
+                            </div>
+                            <div class="box-body">
+                                <div class="box-center">
+                                    <ul>
+                                        <li>ESTHER BURNS</li>
+                                        <li>JESSICA NORRIS</li>
+                                    </ul>
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        april 15, 2023
+                                    </span>
+                                </div>
+                                <div class="box-bottom">
+                                    <button>
+                                        <span>1</span>
+                                        1.28
+                                    </button>
+                                    <button>
+                                        <span>2</span>
+                                        3.60
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-item pr-0">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="img/betting-news-03-370x180.jpg" alt="image" />
+                            </div>
+                            <div class="box-body">
+                                <div class="box-center">
+                                    <ul>
+                                        <li>LESLEY MOODY</li>
+                                        <li>CHRISTOPHER BENSON</li>
+                                    </ul>
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        april 15, 2023
+                                    </span>
+                                </div>
+                                <div class="box-bottom">
+                                    <button>
+                                        <span>1</span>
+                                        1.28
+                                    </button>
+                                    <button>
+                                        <span>2</span>
+                                        3.60
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div id="sec3-row">
+                    <div class="sec3-item-left">
+                        <ul>
+                            <li>
+                                <div class="sec3-title">
+                                    <h3>UPCOMING MATCH</h3>
+                                    <span>calendar</span>
+                                </div>
+                                <hr>
+                                <div class="upcoming-box">
+                                    <h4>FOOTBALL - 08:30 PM</h4>
+                                    <h2>EUROPA LEAGUE QUALIFYING</h2>
+                                    <div class="upcoming-row">
+                                        <div class="upcoming-item align-self-center">
+                                            <img width="60px" height="60px" src="img/team-atletico-100x100.png" alt="image" />
+                                            <p>ATLETICO</p>
+                                            <span>USA</span>
+                                        </div>
+                                        <div class="upcoming-item">
+                                            <ul>
+                                                <li>FRI 19</li>
+                                                <li>MAY 2023</li>
+                                                <li><span>VS</span></li>
+                                                <li><button>SHARE</button></li>
+                                                <li><button>BUY TICKETS</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="upcoming-item align-self-center">
+                                            <img width="60px" height="60px" src="img/team-bavaria-fc-113x106.png" alt="image" />
+                                            <p>CELTA VIGO</p>
+                                            <span>SPAIN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sec3-title">
+                                    <h3>POPULAR NEWS</h3>
+                                    <span>all news</span>
+                                </div>
+                                <hr>
+                                <div class="popular-row">
+                                    <div class="popular-item pl-0">
+                                        <div class="popular-box">
+                                            <div class="popular-img">
+                                                <img width="100%" src="img/news-2-1-368x287.jpg" alt="image" />
+                                            </div>
+                                            <div class="popular-content">
+                                                <div class="popular-body">
+                                                    <h2>BRADY CONFIRMS RETURN FOR 2023 AND YEARS BEYOND</h2>
+                                                    <button>sports</button>
+                                                    <span><i class="fa-regular fa-clock"></i> april 15, 2023</span>
+                                                </div>
+                                                <hr>
+                                                <div class="popular-footer">
+                                                    <p>Quarterback Tom Brady confirmed Monday that he will be back playing for the New England...</p>
+                                                    <button>read more</button>
+                                                    <button><i class="fa-solid fa-share-nodes"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-item pr-0">
+                                        <div class="popular-box">
+                                            <div class="popular-img">
+                                                <img width="100%" src="img/news-2-2-368x287.jpg" alt="image" />
+                                            </div>
+                                            <div class="popular-content">
+                                                <div class="popular-body">
+                                                    <h2>ROBERTSON'S DECENT DEBUT AT EUROPEAN CUP 2023</h2>
+                                                    <button>sports</button>
+                                                    <span><i class="fa-regular fa-clock"></i> april 15, 2023</span>
+                                                </div>
+                                                <hr>
+                                                <div class="popular-footer">
+                                                    <p>Robertson, in his first Anfield outing as a Liverpool player, looked assured at left-back...</p>
+                                                    <button>read more</button>
+                                                    <button><i class="fa-solid fa-share-nodes"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sec3-item-right">
+                        <ul>
+                            <li>
+                                <div class="sec3-title">
+                                    <h3>ULATEST GAME RESULTS</h3>
+                                </div>
+                                <hr>
+                                <ul id="result-games">
+                                    <li>
+                                        <div class="result-card">
+                                            <div class="result-content">
+                                                <ul>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img width="60px" height="60px" src="img/team-atletico-100x100.png" alt="image" />
+                                                        </div>
+                                                        <p>ATLETICO</p>
+                                                        <span>USA</span>
+                                                    </li>
+                                                    <li class="align-self-center">
+                                                        <div class="hesab">
+                                                            <button>WIN</button>
+                                                            <span>2</span>
+                                                            <svg class="align-self-center" fill="#e1e1e1" x="0px" y="0px" width="7px" height="18px" viewBox="0 0 7 21" enable-background="new 0 0 7 21" xml:space="preserve">
+                                                                <g>
+                                                                  <circle cx="3.5" cy="3.5" r="3"></circle>
+                                                                  <path d="M3.5,1C4.879,1,6,2.122,6,3.5S4.879,6,3.5,6S1,4.878,1,3.5S2.122,1,3.5,1 M3.5,0C1.567,0,0,1.567,0,3.5S1.567,7,3.5,7      S7,5.433,7,3.5S5.433,0,3.5,0L3.5,0z"></path>
+                                                                </g>
+                                                                <g>
+                                                                  <circle cx="3.695" cy="17.5" r="3"></circle>
+                                                                  <path d="M3.695,15c1.378,0,2.5,1.122,2.5,2.5S5.073,20,3.695,20s-2.5-1.122-2.5-2.5S2.316,15,3.695,15 M3.695,14      c-1.933,0-3.5,1.567-3.5,3.5s1.567,3.5,3.5,3.5s3.5-1.567,3.5-3.5S5.628,14,3.695,14L3.695,14z"></path>
+                                                                </g>
+                                                              </svg>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <p>HOME</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img height="60px" src="img/team-real-madrid-41x59.png" alt="image" />
+                                                        </div>
+                                                        <p>REAL MADRID</p>
+                                                        <span>SPAIN</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="result-bottom">
+                                                <p>NEW YORKERS STADIUM / APRIL 14, 2023</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="result-card">
+                                            <div class="result-content">
+                                                <ul>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img width="60px" height="60px" src="img/team-bavaria-fc-56x52.png" alt="image" />
+                                                        </div>
+                                                        <p>BAVARIA FC</p>
+                                                        <span>GERMANY</span>
+                                                    </li>
+                                                    <li class="align-self-center">
+                                                        <div class="hesab">
+                                                            <button>WIN</button>
+                                                            <span>2</span>
+                                                            <svg class="align-self-center" fill="#e1e1e1" x="0px" y="0px" width="7px" height="18px" viewBox="0 0 7 21" enable-background="new 0 0 7 21" xml:space="preserve">
+                                                                <g>
+                                                                  <circle cx="3.5" cy="3.5" r="3"></circle>
+                                                                  <path d="M3.5,1C4.879,1,6,2.122,6,3.5S4.879,6,3.5,6S1,4.878,1,3.5S2.122,1,3.5,1 M3.5,0C1.567,0,0,1.567,0,3.5S1.567,7,3.5,7      S7,5.433,7,3.5S5.433,0,3.5,0L3.5,0z"></path>
+                                                                </g>
+                                                                <g>
+                                                                  <circle cx="3.695" cy="17.5" r="3"></circle>
+                                                                  <path d="M3.695,15c1.378,0,2.5,1.122,2.5,2.5S5.073,20,3.695,20s-2.5-1.122-2.5-2.5S2.316,15,3.695,15 M3.695,14      c-1.933,0-3.5,1.567-3.5,3.5s1.567,3.5,3.5,3.5s3.5-1.567,3.5-3.5S5.628,14,3.695,14L3.695,14z"></path>
+                                                                </g>
+                                                              </svg>
+                                                            <span>3</span>
+                                                        </div>
+                                                        <p>AWAY</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img height="60px" src="img/team-atletico-100x100.png" alt="image" />
+                                                        </div>
+                                                        <p>ATLETICO</p>
+                                                        <span>USA</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="result-bottom">
+                                                <p>NEW YORKERS STADIUM / APRIL 14, 2023</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="result-card">
+                                            <div class="result-content">
+                                                <ul>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img width="60px" height="60px" src="img/team-atletico-100x100.png" alt="image" />
+                                                        </div>
+                                                        <p>ATLETICO</p>
+                                                        <span>USA</span>
+                                                    </li>
+                                                    <li class="align-self-center">
+                                                        <div class="hesab">
+                                                            <button>WIN</button>
+                                                            <span>4</span>
+                                                            <svg class="align-self-center" fill="#e1e1e1" x="0px" y="0px" width="7px" height="18px" viewBox="0 0 7 21" enable-background="new 0 0 7 21" xml:space="preserve">
+                                                                <g>
+                                                                  <circle cx="3.5" cy="3.5" r="3"></circle>
+                                                                  <path d="M3.5,1C4.879,1,6,2.122,6,3.5S4.879,6,3.5,6S1,4.878,1,3.5S2.122,1,3.5,1 M3.5,0C1.567,0,0,1.567,0,3.5S1.567,7,3.5,7      S7,5.433,7,3.5S5.433,0,3.5,0L3.5,0z"></path>
+                                                                </g>
+                                                                <g>
+                                                                  <circle cx="3.695" cy="17.5" r="3"></circle>
+                                                                  <path d="M3.695,15c1.378,0,2.5,1.122,2.5,2.5S5.073,20,3.695,20s-2.5-1.122-2.5-2.5S2.316,15,3.695,15 M3.695,14      c-1.933,0-3.5,1.567-3.5,3.5s1.567,3.5,3.5,3.5s3.5-1.567,3.5-3.5S5.628,14,3.695,14L3.695,14z"></path>
+                                                                </g>
+                                                              </svg>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <p>HOME</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="result-img">
+                                                            <img height="60px" width="60px" src="img/team-sevilla-57x46.png" alt="image" />
+                                                        </div>
+                                                        <p>SEVILLA</p>
+                                                        <span>SPAIN</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="result-bottom">
+                                                <p>NEW YORKERS STADIUM / APRIL 14, 2023</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="sec3-title">
+                                    <h3>FOLLOW US</h3>
+                                </div>
+                                <hr>
+                               <div class="follow-row">
+                                    <ul class="follow-list">
+                                        <li>
+                                            <div class="follow-item facebook">
+                                                <h4>50k</h4>
+                                                <p>Like <i class="fa-solid fa-circle-plus"></i></p>
+                                                <span class="fa-brands fa-facebook-f"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="follow-item google">
+                                                <h4>15k</h4>
+                                                <p>Like <i class="fa-solid fa-circle-plus"></i></p>
+                                                <span class="fa-brands fa-google-plus-g"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="follow-list">
+                                        <li>
+                                            <div class="follow-item twitter">
+                                                <h4>120k</h4>
+                                                <p>Like <i class="fa-solid fa-circle-plus"></i></p>
+                                                <span class="fa-brands fa-twitter"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="follow-item instagram">
+                                                <h4>85k</h4>
+                                                <p>Like <i class="fa-solid fa-circle-plus"></i></p>
+                                                <span class="fa-brands fa-instagram"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                               </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end  -->
+    <!-- footer start  -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+               <div class="footer-head">
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <fieldset>
+                        <input type="email" required  placeholder="ENTER YOUR E-MAIL" />
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </fieldset>
+                    <h6>The text field is required.</h6>
+               </div>
+               <div class="footer-body">
+                    <div class="footer-row">
+                        <div class="col-lg-4 pl-0">
+                            <div class="footer-left-item">
+                                <div class="footer-logo-row">
+                                    <div id="footer-logo">
+                                        <img width="100px" src="img/logo-inverse-213x82.png" alt="logo" />
+                                    </div>
+                                    <div class="text1">
+                                        <p>S-Bet offers you all the best online betting from every corner of the planet with thousands of online betting markets.</p>
+                                    </div>
+                                </div>
+                                <ul id="our-team">
+                                    <li>
+                                        <div class="align-self-center">
+                                            <svg fill="#64b000" class="svg-color-primary svg-sizing-35" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" preserveAspectRatio="none">
+                                                <path d="M2,26c0,0.553,0.447,1,1,1h5c0.553,0,1-0.447,1-1v-8.185c-0.373-0.132-0.711-0.335-1-0.595V19 H6v-1v-1v-1H5v1v2H3v-9H2v1H1V9V8c0-0.552,0.449-1,1-1h1h1h3h0.184c0.078-0.218,0.173-0.426,0.297-0.617C8.397,5.751,9,4.696,9,3.5 C9,1.567,7.434,0,5.5,0S2,1.567,2,3.5C2,4.48,2.406,5.364,3.056,6H3H2C0.895,6,0,6.895,0,8v7c0,1.104,0.895,2,2,2V26z M8,26H6v-6h2 V26z M5,26H3v-6h2V26z M3,3.5C3,2.121,4.121,1,5.5,1S8,2.121,8,3.5S6.879,6,5.5,6S3,4.879,3,3.5 M1,15v-3h1v4 C1.449,16,1,15.552,1,15"></path>
+                                                <path d="M11.056,6H11h-1C8.895,6,8,6.895,8,8v7c0,1.104,0.895,2,2,2v9c0,0.553,0.447,1,1,1h5 c0.553,0,1-0.447,1-1v-9c1.104,0,2-0.896,2-2V8c0-1.105-0.896-2-2-2h-1h-0.056C16.594,5.364,17,4.48,17,3.5 C17,1.567,15.434,0,13.5,0S10,1.567,10,3.5C10,4.48,10.406,5.364,11.056,6 M10,15v1c-0.551,0-1-0.448-1-1v-3h1V15z M11,20h2v6h-2 V20z M16,26h-2v-6h2V26z M17,16v-1v-3h1v3C18,15.552,17.551,16,17,16 M17,7c0.551,0,1,0.448,1,1v1v1v1h-1v-1h-1v5v4h-2v-1v-1v-1h-1 v1v1v1h-2v-4v-5h-1v1H9v-1V9V8c0-0.552,0.449-1,1-1h1h1h3h1H17z M13.5,1C14.879,1,16,2.121,16,3.5C16,4.879,14.879,6,13.5,6 S11,4.879,11,3.5C11,2.121,12.121,1,13.5,1"> </path>
+                                                <polygon points="15,13 14,13 14,9 13,9 12,9 12,10 13,10 13,13 12,13 12,14 13,14 14,14 15,14 	"></polygon>
+                                                <polygon points="7,14 7,13 5,13 5,12 6,12 7,12 7,10 7,9 6,9 4,9 4,10 6,10 6,11 5,11 4,11 4,12 4,13 4,14 5,14"></polygon>
+                                                <polygon points="20,10 22,10 22,11 21,11 21,12 22,12 22,13 20,13 20,14 22,14 23,14 23,13 23,12 23,11 23,10 23,9 22,9 20,9 	"></polygon>
+                                                <path d="M19.519,6.383C19.643,6.574,19.738,6.782,19.816,7H20h3h1h1c0.551,0,1,0.448,1,1v3h-1v-1h-1v9 h-2v-2v-1h-1v1v2h-2v-1.78c-0.289,0.26-0.627,0.463-1,0.595V26c0,0.553,0.447,1,1,1h5c0.553,0,1-0.447,1-1v-9c1.104,0,2-0.896,2-2 V8c0-1.105-0.896-2-2-2h-1h-0.056C24.594,5.364,25,4.48,25,3.5C25,1.567,23.434,0,21.5,0S18,1.567,18,3.5 c0,0.736,0.229,1.418,0.617,1.981C18.861,5.834,19.166,6.14,19.519,6.383 M19,20h2v6h-2V20z M24,26h-2v-6h2V26z M26,15 c0,0.552-0.449,1-1,1v-4h1V15z M21.5,1C22.879,1,24,2.121,24,3.5C24,4.879,22.879,6,21.5,6C20.121,6,19,4.879,19,3.5 C19,2.121,20.121,1,21.5,1"></path>
+                                              </svg>
+                                        </div>
+                                        <ul>
+                                            <li>JOIN OUR TEAM</li>
+                                            <li><a href="#">info@demolink.org</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="align-self-center">
+                                            <svg fill="#64b000" class="svg-color-primary svg-sizing-35" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 72 72">
+                                                <path d="M36.002,0c-0.41,0-0.701,0.184-0.931,0.332c-0.23,0.149-0.4,0.303-0.4,0.303l-9.251,8.18H11.58 c-1.236,0-1.99,0.702-2.318,1.358c-0.329,0.658-0.326,1.3-0.326,1.3v11.928l-8.962,7.936V66c0,0.015-0.038,1.479,0.694,2.972 C1.402,70.471,3.006,72,5.973,72h30.03h30.022c2.967,0,4.571-1.53,5.306-3.028c0.736-1.499,0.702-2.985,0.702-2.985V31.338 l-8.964-7.936V11.475c0,0,0.004-0.643-0.324-1.3c-0.329-0.658-1.092-1.358-2.328-1.358H46.575l-9.251-8.18 c0,0-0.161-0.154-0.391-0.303C36.703,0.184,36.412,0,36.002,0z M36.002,3.325c0.49,0,0.665,0.184,0.665,0.184l6,5.306h-6.665 h-6.665l6-5.306C35.337,3.51,35.512,3.325,36.002,3.325z M12.081,11.977h23.92H59.92v9.754v2.121v14.816L48.511,48.762 l-10.078-8.911c0,0-0.307-0.279-0.747-0.548s-1.022-0.562-1.684-0.562c-0.662,0-1.245,0.292-1.686,0.562 c-0.439,0.268-0.747,0.548-0.747,0.548l-10.078,8.911L12.082,38.668V23.852v-2.121v-9.754H12.081z M8.934,26.867v9.015 l-5.091-4.507L8.934,26.867z M63.068,26.867l5.091,4.509l-5.091,4.507V26.867z M69.031,34.44v31.559 c0,0.328-0.103,0.52-0.162,0.771L50.685,50.684L69.031,34.44z M2.971,34.448l18.348,16.235L3.133,66.77 c-0.059-0.251-0.162-0.439-0.162-0.769C2.971,66.001,2.971,34.448,2.971,34.448z M36.002,41.956c0.264,0,0.437,0.057,0.546,0.104 c0.108,0.047,0.119,0.059,0.119,0.059l30.147,26.675c-0.3,0.054-0.79,0.207-0.79,0.207H36.002H5.98H5.972 c-0.003,0-0.488-0.154-0.784-0.207l30.149-26.675c0,0,0.002-0.011,0.109-0.059C35.555,42.013,35.738,41.956,36.002,41.956z"></path>
+                                              </svg>
+                                        </div>
+                                        <ul>
+                                            <li>CONTACT US</li>
+                                            <li><a href="#">mail@demolink.org</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul id="ftr-icon">
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                    <li><i class="fa-brands fa-google-plus-g"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><button>GET IN TOUCH</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pr-0">
+                            <div class="footer-right-item">
+                                <h2>POPULAR NEWS</h2>
+                                <hr>
+                                <div id="news">
+                                    <ul class="news-item pl-0">
+                                        <li>
+                                            <div>
+                                                <img src="img/footer-soccer-post-1-93x87.jpg" alt="image" />
+                                            </div>
+                                            <p>
+                                                <button>TENNIS</button>
+                                                <a href="#">NEXT GEN STARS MAKING A SURGE IN THE NEW SEASON</a>
+                                                <span><i class="fa-regular fa-clock"></i> APRIL 15, 2023</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="img/footer-soccer-post-3-93x87.jpg" alt="image" />
+                                            </div>
+                                            <p>
+                                                <button>FOOTBALL</button>
+                                                <a href="#">PREM IN 90 SECONDS: CHELSEA'S CRISIS IS OVER!</a>
+                                                <span><i class="fa-regular fa-clock"></i> APRIL 15, 2023</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="news-item pr-0">
+                                        <li>
+                                            <div>
+                                                <img src="img/footer-soccer-post-2-93x87.jpg" alt="image" />
+                                            </div>
+                                            <p>
+                                                <button>BASKETBALL</button>
+                                                <a href="#">RAPTORS GM EXCITED ABOUT MONROE SIGNING</a>
+                                                <span><i class="fa-regular fa-clock"></i> APRIL 15, 2023</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="img/footer-soccer-post-4-93x87.jpg" alt="image" />
+                                            </div>
+                                            <p>
+                                                <button>BASEBALL</button>
+                                                <a href="#">LESTER REGAINS FORM WITH 6 SCORELESS, 8 K’S</a>
+                                                <span><i class="fa-regular fa-clock"></i> APRIL 15, 2023</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-row">
+                    <p>S-BET © 2024. PRIVACY POLICY</p>
+                    <ul>
+                        <li>SPORTS </li>
+                        <li>IN-PLAY </li>
+                        <li>PROMOTIONS </li>
+                        <li>STATISTICS </li>
+                        <li>PAGES</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer bottom  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
